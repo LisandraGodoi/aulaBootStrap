@@ -1,0 +1,121 @@
+<DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>BootStrap</title>
+        <meta charset="utf-8">
+        <!--importar o CSS do bootastrap-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <!--Na página do bootstrap há a aba componentes com várias coisas
+        com html e css prontos para uso. Ex: <button type="button" class="btn btn-warning">Warning</button> -->
+        <!--criando barra de navegação-->
+        <nav class="navbar navbar-expand-lg navbar-light"> 
+            <a class="navbar-brand" href="#">
+                <img src="img/DIO.png" width="100px" height="100px">
+            </a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#secQuemSomos">Quem Somos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#secParceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#secServicos">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <section id="secQuemSomos">
+            <!--container normal faz sem pegar a linha toda e fluid pega 
+            a linha toda
+            text-center centraliza o texto
+            <div class="container-fluid linha text-center">
+                <p>
+                    Digital Inovation One
+                </p>--> 
+            
+            <div class="container contColor marginSec text-center">
+                <p>
+                    <h5>Quem Somos</h5>
+                </p>
+            </div>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="imagens">
+                <!--para arredondar imagem class="rounded-circle"-->
+                <img src="img/dois.jpeg" class="rounded-circle" align width="300px" height="300px">
+            </div>
+        </section>
+        <!--SECÇÃO PARCEIROS--------------------------------------------------->
+        <section id="secParceiros">
+            <div class="container-fluid text-center marginP parceiros">
+                <!--Criar as colunas-->
+                <h5>Parceiros</h5>
+                <br>
+                <div class="row">
+                    <!--md médio lg grande sm small-->
+                    <div class="col-lg-4">
+                        <img src="img/logo1.png" width="200">
+                    </div>
+
+                    <div class="col-lg-4 nike">
+                        <img src="img/logo2.png" width="200">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/logo3.png"  width="200">
+                    </div>
+                </div>
+                    
+            </div>
+
+        </section>
+
+        <!--SERVIÇOS-------------------------------------------------------------------------------->
+        <section id="secServicos">
+        </section>
+        <div class="container text-center marginSer servicos_">
+            <div class="contColor marginSec text-center">
+                <h5>Serviços</h5>
+            </div>
+            <div class="container">
+                <!--divisão em duas colunas-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>
+                            <br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <img src="img/seis.jpeg" class="rounded-circle" width="300px" height="300px">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <p>
+                            <br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <img src="img/quatro.jpeg" class="rounded-circle" width="300px" height="300px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </section>
+
+        <footer class="container-fluid text-center bfooter">
+            <p>
+                Aula de BooStrap - Digital Inovation One. Por Lisandra
+            </p>
+        </footer>
+    </body>
+</html>
